@@ -1,0 +1,11 @@
+form {
+  display: inline-flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+input {
+  border: none;
+  border-radius: 4px;
+  padding: 12px;
+}

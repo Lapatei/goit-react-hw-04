@@ -1,0 +1,15 @@
+.ReactModal__Content {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.close {
+  display: block;
+  width: 90px;
+  align-self: flex-end;
+}
+
+p {
+  color: black;
+}
