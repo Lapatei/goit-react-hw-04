@@ -1,0 +1,9 @@
+.close {
+  display: block;
+  width: 90px;
+  margin-bottom: 12px;
+}
+
+.param {
+  color: black;
+}

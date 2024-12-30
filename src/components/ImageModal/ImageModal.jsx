@@ -1,5 +1,5 @@
 import Modal from 'react-modal';
-import './ImageModal.css'
+import styles from './ImageModal.module.css'
 
 Modal.setAppElement('#root');
 
@@ -9,13 +9,13 @@ const ImageModal = ({ image, onClose }) => (
     onRequestClose={onClose}
     contentLabel="Image Modal"
   >
-    <button className='close' onClick={onClose}>Close</button>
+    <button className={styles.close} onClick={onClose}>Close</button>
     {image && (
       <>
         <img src={image.urls.regular} alt={image.alt_description} />
-        <p>{image.description || 'No description'}</p>
-        <p>Author: {image.user.name}</p>
-        <p>Likes: {image.likes}</p>
+        <p className={styles.param}>{image.description || 'No description'}</p>
+        <p className={styles.param}>Author: {image.user.name}</p>
+        <p className={styles.param}>Likes: {image.likes}</p>
       </>
     )}
   </Modal>
